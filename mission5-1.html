@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mission5-1</title>
+    <style>
+        .class1 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid rgb(5, 42, 3);
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 今日の日付表示用の要素 -->
+    現在の日時は、<span id="datetime">現在の日時</span> です。<br>
+
+    <!-- カレンダー表示ボタン -->
+    <input type="button" style="background-color:aquamarine ;" value="カレンダーを表示する" onclick="showCalendarOnClick();" class="class1"><br><br>
+
+    <!-- 年月とカレンダーを表示する要素 -->
+    <div id="yearAndMonth"></div>
+    <div id="calendar"></div><br>
+
+    <!-- 「前の月へ」「次の月へ」ボタン -->
+    <div class="class1">
+        <button id="prev" onclick="prev()" class="class1">＜</button>
+        <button id="next" onclick="next()" class="class1">＞</button>
+    </div>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="mission5-1-1.js"></script>
+    <script src="mission5-1-2.js"></script>
+</body>
+
+</html>
